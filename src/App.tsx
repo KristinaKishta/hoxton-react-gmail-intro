@@ -1,30 +1,21 @@
-import "./App.css";
+import './App.css'
 
-import flaticonWelcomeImage from "./assets/images/flaticon-welcome-image.png";
-import backArrow from "./assets/icons/back-arrow.png";
-import downloadButton from "./assets/icons/download-button.png";
-import rateStarButton from "./assets/icons/rate-star-button.png";
-import rubbishButton from "./assets/icons/rubbish-bin-delete-button.png";
+import flaticonWelcomeImage from './assets/images/flaticon-welcome-image.png'
+import backArrow from './assets/icons/back-arrow.png'
+import downloadButton from './assets/icons/download-button.png'
+import rateStarButton from './assets/icons/rate-star-button.png'
+import rubbishButton from './assets/icons/rubbish-bin-delete-button.png'
+import LeftHeader from './components/header-components/LeftHeader'
+import Search from './components/header-components/Search'
 
-function App(): JSX.Element {
+function App() {
   return (
     <div className="app">
       <header className="header">
-        <div className="left-menu">
-          <svg className="menu-icon" focusable="false" viewBox="0 0 24 24">
-            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-          </svg>
-
-          <img
-            src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png"
-            alt="gmail logo"
-          />
-        </div>
-
-        <div className="search">
-          <input className="search-bar" placeholder="Search mail" />
-        </div>
+        <LeftHeader />
+        <Search />
       </header>
+
       <nav className="left-menu">
         <ul className="inbox-list">
           <li className="item active">
@@ -75,7 +66,7 @@ function App(): JSX.Element {
               </div>
               <div className="user-info">
                 <p>
-                  to me <em>&lt;nicolas@hoxtonacademy.co.uk&gt;</em>
+                  to me <em>&lt;nicolas@boolean.co.uk&gt;</em>
                 </p>
               </div>
             </div>
@@ -116,7 +107,7 @@ function App(): JSX.Element {
         </article>
       </main>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
